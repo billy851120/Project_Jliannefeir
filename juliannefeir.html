@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juliannefeir</title>
+    <style>
+        @import url(./node_modules/normalize.css/normalize.css);
+        @import url(./node_modules/bootstrap/dist/css/bootstrap.css);
+
+
+
+        .section5_smallBlock {
+            padding: 40px 0px 85px 0px;
+        }
+
+        .section4_block {
+            position: absolute;
+            z-index: 10;
+            background-color: #fff;
+
+        }
+
+        .section3_sbanner {
+            padding: 17px 81px;
+        }
+
+        .side_slider {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            border: 1px solid #000;
+            position: fixed;
+            z-index: 99;
+
+        }
+
+        .link_dot {
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            padding: 10px;
+            background: rgba(0, 0, 0, .7);
+            box-shadow: 0 0 3px hsla(0, 0%, 100%, .5);
+        }
+
+        .nav-fill {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            background: #CCCCCC;
+        }
+
+        .nav .nav-item .nav-link {
+            border-radius: 0px;
+        }
+
+        .nav .nav-item.active {
+            background: #0D6EFD;
+        }
+
+        .nav .nav-item.active .nav-link {
+            color: #000;
+        }
+
+        .scrollspy {
+            min-height: 100vh;
+            height: 100vh;
+            border: 1px solid #CCCCCC;
+            overflow: auto;
+            scroll-behavior: smooth;
+        }
+
+        .scrollspy .section {
+            /* padding: 15px; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .scrollspy .section:nth-child(odd) {
+            /* background-color: pink; */
+        }
+
+        .scrollspy .section:nth-child(even) {
+            /* background-color: yellow; */
+        }
+
+        .sectionBlock {
+            min-height: 100vh;
+
+        }
+
+        .section1_banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section1_banner h1,
+        h6 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side_slider">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item link_dot"><a href="#section1" class="nav-link"></a></li>
+            <li class="nav-item link_dot"><a href="#section2" class="nav-link"></a></li>
+            <li class="nav-item link_dot"><a href="#section3" class="nav-link"></a></li>
+            <li class="nav-item link_dot"><a href="#section4" class="nav-link"></a></li>
+        </ul>
+    </div>
+    <div class="container-fluid gx-0">
+        <div class="col-12 scrollspy">
+            <div class="col-12">
+                <div style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-color: transparent;
+                        background-image: url(./IMG/watercolor_texture_red_by_acg723-d65on26_h2tzka.webp);
+                    " id="section1" class="section sectionBlock">
+                    <div class="section1_banner">
+                        <h6 style="margin-bottom: 23px; font-size: 1.1rem;">TEACHER CANDIDATE / ARTIST / ADVOCATE</h6>
+                        <h1 style="font-size: 4.5rem; font-weight: 900;">JULIANNE FEIR</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="col-12 d-flex flex-row  section sectionBlock">
+                <div class="col-6" style="padding: 50px;">
+                    <div class="text-center" style="border-bottom: 1px  solid #000;">
+                        <h1 style="font-size: 120%; font-weight: 600;">About Me</h1>
+                        <p style="font-size: 53%; padding-bottom: 30px;">Hello! My name is Julianne Feir. I am a Senior
+                            at Minnesota State
+                            University Moorhead
+                            studying Art Education with a completed minor in Spanish. I live in Fargo, ND with my
+                            husband, Ricky Feir (also an education major!). I am passionate about the arts and strive to
+                            excel in both the field of art education and my professional work.</p>
+                    </div>
+                    <div class="mt-5" style="text-align: center;">
+                        <h2 style="font-weight: 300;">My Resume</h2>
+                        <a style="font-size: 55%;" href="#">Click Here to View in Google Docs</a>
+                    </div>
+                </div>
+                <div class="col-6 h-100">
+                    <div class="h-100" style="
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-color: transparent;
+                        background-image: url(./IMG/IMG_2973_btyu0t.webp);
+                        background-size: 51%;
+                        background-position: 100% 65%;
+                    "></div>
+                </div>
+            </div>
+            <div id="section3" class="col-12 d-flex flex-row ">
+                <div class="col-6" style="
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-color: transparent;
+                background-image: url(./IMG/IMG_1824_a1oavz.webp);
+                background-size: 50%;
+                background-position: 0 50%;
+                 ">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="color: #fff; font-weight: bolder; font-size: 3.5rem; margin-bottom: 15px;">Curriculum
+                        </h1>
+                        <p style="color: #fff; font-size: 1.1rem; font-weight: 300;">The conceptual framework for a
+                            strong
+                            art program.</p>
+
+                    </div>
+                </div>
+                <div style="padding: 47px 0;">
+                    <div class="col-12">
+                        <div class="col-12 section3_sbanner d-flex flex-row justify-content-center align-items-center">
+                            <div class="col-6" style="
+                                    max-width: 720px;
+                                    max-height: 455px;
+                                    margin: 0 3%;
+                                ">
+                                <img style="
+                                    width: 100%;
+                                    height: auto;
+                                " src="./IMG/Screen_Shot_2016-10-13_at_9.38.00_AM_jgsher.webp" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h5>Curriculum Map</h5>
+                                <p style="color: #b3873d; font-size: 0.8rem; font-weight: 700;">Click Here to View in
+                                    Google
+                                    Docs</p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12 section3_sbanner d-flex flex-row justify-content-center align-items-center">
+                            <div class="col-6" style="
+                                    max-width: 720px;
+                                    max-height: 455px;
+                                    margin: 0 3%;
+                                ">
+                                <img style="
+                                    width: 100%;
+                                    height: auto;
+                                " src="./IMG/Screen_Shot_2016-10-13_at_9.46.12_AM_x36xpv.webp" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h5>Unit Plans Map</h5>
+                                <p style="color: #b3873d; font-size: 0.8rem; font-weight: 700;">Click Here to View in
+                                    Google
+                                    Docs</p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12 section3_sbanner d-flex flex-row justify-content-center align-items-center">
+                            <div class="col-6" style="
+                                    max-width: 720px;
+                                    max-height: 455px;
+                                    margin: 0 3%;
+                                ">
+                                <img style="
+                                    width: 100%;
+                                    height: auto;
+                                " src="./IMG/Graphic_Novel_oo3rgi.gif" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h5>Curriculum Map</h5>
+                                <p style="color: #b3873d; font-size: 0.8rem; font-weight: 700;">Click Here to View in
+                                    Google
+                                    Docs</p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="section4" class="col-12  ">
+                <div>
+                    <div class="col-12" style="
+                    background-image: url(./IMG/poop-like-rodins-the-thinker-says-japanese-poop-expert_velipc.webp);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: transparent;
+                    background-attachment: fixed;
+                    background-position: 50% 50%;
+                    min-height: 100vh;
+                    position: relative;
+    
+                    ">
+                        <div class="section4_block" style="padding: 40px 178px 40px 31px; top: 146px;
+                            left: 164px;">
+                            <h1 style="font-weight: 900; font-size: 2.1rem;">Philosophy</h1>
+                            <h1 style="font-weight: 900; font-size: 2.1rem; margin-bottom: 15px;">Statement</h1>
+                            <a href="#" style=" font-size: 1.1rem; color: #3DA3E2; font-weight: 500;">
+                                Matin Luther King Jr.
+                            </a>
+                        </div>
+                        <div class="section4_block" style="padding: 40px 178px 40px 31px; top: 146px;
+                            right: 147px;">
+                            <p style="font-size: 1rem; margin: 0;">Teaching</p>
+                            <p style="font-size: 1rem; margin-bottom: 3px;">Philosophy</p>
+                            <a href="#" style=" font-size: 0.9rem; color: #3DA3E2; font-weight: 500;">
+                                Click Here to View in Google Docs
+                            </a>
+                        </div>
+                        <div class="section4_block" style="padding: 40px 104px 69px 31px; bottom: 46px;
+                            left: 164px;">
+                            <p style="font-size: 1.3rem; margin-bottom: 6px;">Theorists</p>
+                            <a href="#" style="display: block; font-size: 0.9rem; color: #3DA3E2; font-weight: 500;">
+                                Gardner's Multiple Intelligences Theory
+                            </a>
+                            <a href="#" style="display: block; font-size: 0.9rem; color: #3DA3E2; font-weight: 500;">
+                                Bandura's Social Learning Theory
+                            </a>
+                        </div>
+                        <div class="section4_block" style="padding: 40px 78px 40px 31px; bottom: 46px; right: 170px;">
+                            <p style="font-size: 1.2rem; margin-bottom: 6px;">Rationales</p>
+                            <p style="font-size: 0.9rem; margin: 0;">1&rang; Art is a powerful tool used for social
+                                justice.</p>
+                            <p style="font-size: 0.9rem; margin: 0;">2&rang; Art reveals the hidden.</p>
+                            <p style="font-size: 0.9rem; margin: 0;">3&rang; Creating is inseparable from being human.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section5" class="container-fluid ">
+                <div class="row ">
+                    <div style="padding: 63px 0;" class="col-6">
+                        <div style="padding: 33px 0; border-bottom: 1px #D6D4C6 solid;"
+                            class="col-12 text-center d-flex flex-column justify-content-center align-items-center">
+                            <h1 style="font-size: 1.6rem; font-weight: 500;">Lesson Plan Ideas</h1>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Crayola</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Dick Blick Art Materials</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Create Art With Me</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Perpich</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Andover High School STEAM</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Color Theory</a>
+                            <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Saddle Stich Book Binding</a>
+                        </div>
+                        <div class="d-flex ">
+                            <div class="col-6 d-flex flex-column text-center section5_smallBlock"
+                                style="border-right: 1px #D6D4C6 solid;">
+                                <h1 style="font-size: 1.6rem; font-weight: 500;">Helpful Websites</h1>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">National Art Education
+                                    Association</a>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Art Educators of Minnesota</a>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Art Ed Amped</a>
+                            </div>
+                            <div class="col-6 d-flex flex-column text-center section5_smallBlock">
+                                <h1 style="font-size: 1.6rem; font-weight: 500;">Blogs</h1>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">The Incredible Art Department</a>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">The Art of Education</a>
+                                <a style="color: #3DA3E2; font-size: 0.8rem;" href="#">Deep Sparkle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        background-color: transparent;
+                        background-attachment: fixed;
+                        background-position: 98% 50%;
+                        min-height: 100%;
+                        position: relative;
+                            background-image: url(./IMG/d50208c3-3e39-4fe3-9688-c94a90ab693e_g5s1h4.webp);
+                        " class="">
+                            <div style="text-align: center;">
+                                <h1 style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
+                                    Resources</h1>
+                                <strong style="color: #FFF;">A Collection of useful links.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section6" class="container-fluid ">
+                <div class="row ">
+                    <div class="col-6 p-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="
+                        background-repeat: no-repeat;
+                        background-size: 50% 100%;
+                        background-color: transparent;
+                        background-attachment: fixed;
+                        background-position: 0% 50%;
+                        min-height: 100%;
+                        position: relative;
+                            background-image: url(./IMG/121.jpg);
+                        " class="">
+                            <div style="text-align: center;">
+                                <h1 style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
+                                    Advocacy</h1>
+                                <strong style="color: #FFF;">Worth Fighting For.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="" class="p-0 col-6 d-flex flex-column justify-content-center ">
+
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center text-center section5_smallBlock"
+                                style="">
+                                <div style="max-width: 150px; max-height: 150px;">
+                                    <img style="width: 100%;height: 100%;" src="./IMG/fist_mmfgy0.webp" alt="">
+                                </div>
+                                <h1
+                                    style="font-size: 1.8rem; font-weight: 500; margin-bottom: 26px; line-height: 1.5; margin-top: 13px;">
+                                    Social Justice</h1>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">The Social Justice
+                                    Encyclopedia</a>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">NAE Students and Social
+                                    Issues</a>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">The Danger of a Single Story</a>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">Pedagogy of the Oppressed</a>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center text-center "
+                                style="padding: 0px 0px 155px 0px;">
+                                <div style="max-width: 150px; max-height: 150px;">
+                                    <img style="width: 100%;height: 100%;"
+                                        src="./IMG/palette-309419_960_720_gzafta.webp" alt="">
+                                </div>
+                                <h1 style="font-size: 1.8rem; font-weight: 500;">Art Education</h1>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">Every Student Succeeds Act </a>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">Learning in a Visual Age</a>
+                                <a style="color: #3DA3E2; font-size: 0.9rem;" href="#">Critical Evidence</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section7" class="container-fluid ">
+                <div class="row">
+                    <div class="col-6 p-0">
+                        <div style="padding: 65px 0;" class="row justify-content-center ">
+                            <div class="col-6" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                <img style="width: 100%; height: auto;" src="./IMG/IMG_3322_l23kki (1).webp" alt="">
+                            </div>
+                            <div class="col-6" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                <img style="width: 100%; height: auto;" src="./IMG/IMG_1964_2_dieurw.webp" alt="">
+                            </div>
+                            <div class="col-6" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                <img style="width: 100%; height: auto;" src="./IMG/IMG_3251_ljckd0.webp" alt="">
+                            </div>
+                            <div class="col-6" style="padding: 12px 10px; max-width: 250px; max-height: 250px;">
+                                <img style="width: 100%; height: auto;" src="./IMG/IMG_3026_pfcvdy (1).webp" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        background-color: transparent;
+                        background-attachment: fixed;
+                        background-position: 98% 50%;
+                        min-height: 100%;
+                        position: relative;
+                            background-image: url(./IMG/IMG_3416_flzc2k.webp);
+                        " class="">
+                            <div style="text-align: center;">
+                                <h1 style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
+                                    Student Gallery</h1>
+                                <strong style="color: #FFF;">Excellent examples of student work.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section8" class="container-fluid  p-0">
+                <div class="row m-0">
+
+                    <div class="col-6 p-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        background-color: transparent;
+                        background-attachment: fixed;
+                        background-position: 0% 50%;
+                        min-height: 100%;
+                        position: relative;
+                            background-image: url(./IMG/IMG_1177_sja3lp.webp);
+                        " class="">
+                            <div style="text-align: center;">
+                                <h1 style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
+                                    Student Gallery</h1>
+                                <strong style="color: #FFF;">Excellent examples of student work.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div style="padding: 65px 0;" class="d-flex justify-content-center">
+                            <div class=" d-flex flex-column justify-content-center ">
+                                <div class="col" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                    <img style="width: 100%; height: auto;" src="./IMG/IMG_2696_fdarrl (1).webp" alt="">
+                                </div>
+                                <div class="col" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                    <img style="width: 100%; height: auto;" src="./IMG/IMG_2101_ckvdgw (1).webp" alt="">
+                                </div>
+                            </div>
+                            <div class=" d-flex flex-column justify-content-center ">
+                                <div class="col" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                    <img style="width: 100%; height: auto;" src="./IMG/IMG_2235_f6mx7g (1).webp" alt="">
+                                </div>
+                                <div class="col" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                    <img style="width: 100%; height: auto;" src="./IMG/IMG_2236_ho2jun.webp" alt="">
+                                </div>
+                                <div class="col" style="padding: 12px 10px; max-width: 250px; max-height: 333px;">
+                                    <img style="width: 100%; height: auto;" src="./IMG/IMG_3096_oceann.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section9" class="container-fluid p-0">
+                <div class="col-12">
+                    <div style="
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            background-color: transparent;
+                            background-image: url(./IMG/watercolor_texture_red_by_acg723-d65on26_h2tzka.webp);
+                        " class="section sectionBlock">
+                        <div class="text-center" style="
+                            background-color: #fff; 
+                            max-width: 1020px;
+                            width: 84%;
+                            padding: 51px 0 ;
+                        ">
+                            <div style="margin-bottom: 35px;">
+                                <h1 style="margin: 0; font-size: 3rem;font-weight: 900;">Contact</h1>
+                                <small style="font-size: 1.1rem; color: #B3873D;">Send me an e-mail!</small>
+                            </div>
+                            <div>
+                                <div style="width: 380px; margin: 0 auto;">
+                                    <label style="display: none;" for="">Name</label>
+                                    <input style="font-size: 1rem;  width: 360px; padding: 7px 6px;" type="text"
+                                        placeholder="Name" name="Name" id="">
+                                </div>
+                            </div>
+                            <div>
+                                <div style="width: 380px; margin: 0 auto;">
+                                    <label style="display: none;" for="">Email</label>
+                                    <input style="font-size: 1rem;  width: 360px; padding: 7px 6px;" type="text"
+                                        placeholder="Email" name="Email" id="">
+                                </div>
+                            </div>
+                            <div>
+                                <div style="width: 380px; margin: 8px auto 0px auto;">
+                                    <label style="display: none;" for="">Message</label>
+                                    <textarea name="text" id=""
+                                        style="font-size: 1rem; height: 138px; width: 360px; padding: 7px 6px;"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button style="    
+                                color: #fff;
+                                background-color: #556677;
+                                border: 0;
+                                font-size: 1.1rem;
+                                font-weight: 900;
+                                padding: 10px 30px;
+                                ">SUBMIT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src=" ./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        window.addEventListener('load', (event) => {
+            const content = document.querySelector('.scrollspy');
+            const directory = document.querySelectorAll('.nav li a');
+            const navLinks = [];
+            const options = {
+                root: content,
+                rootMargin: '-5% 0% -95% 0px',
+                threshold: 0
+            }
+
+            const callback = (entries) => {
+                for (const entry of entries) {
+                    const id = entry.target.id;
+                    if (entry.isIntersecting) {
+                        console.log(navLinks[id].parentNode)
+                        navLinks[id].parentNode.classList.add('active');
+                    } else {
+                        navLinks[id].parentNode.classList.remove('active');
+                    }
+                }
+
+            }
+            const observer = new IntersectionObserver(callback, options);
+            directory.forEach((elem) => {
+                const id = elem.getAttribute('href').substr(1);
+                const section = content.querySelector('#' + id);
+                observer.observe(section);
+                navLinks[id] = elem;
+            });
+
+        })
+
+    </script>
+</body>
+
+</html>
