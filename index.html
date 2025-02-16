@@ -33,40 +33,86 @@
             display: flex;
             align-items: center;
             min-height: 100vh;
-            border: 1px solid #000;
             position: fixed;
             z-index: 99;
+            padding: 0 20px;
 
         }
 
         .link_dot {
             border-radius: 50%;
-            width: 5px;
-            height: 5px;
-            padding: 10px;
+            width: 20px;
+            height: 20px;
             background: rgba(0, 0, 0, .7);
-            box-shadow: 0 0 3px hsla(0, 0%, 100%, .5);
         }
 
         .nav-fill {
             display: flex;
             flex-direction: column;
+            gap:15px 0px ;
+
         }
 
         .nav {
-            background: #CCCCCC;
+            /* background: #CCCCCC; */
         }
 
         .nav .nav-item .nav-link {
             border-radius: 0px;
         }
 
-        .nav .nav-item.active {
-            background: #0D6EFD;
+        .nav .nav-item {
+            position: relative;
+            cursor: pointer;
+
+        }
+        .nav .nav-item.active::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+
+        }
+        .nav .nav-item:hover::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+            pointer-events:none;
+
+        }
+        .nav .nav-item:hover .link_dotTag{
+            opacity: 1;
         }
 
         .nav .nav-item.active .nav-link {
             color: #000;
+        }
+        .nav .nav-item .link_dotTag{
+           opacity: 0;
+           position: absolute;
+           display: inline-block;
+           top: 0;
+           left: 140%;
+           background-color: #000;
+           color: #fff;
+           white-space: nowrap;
+           font-size: 0.7rem;
+           font-weight: 800;
+           padding: 2px 8px;
+           border-radius: 10px;
+
+
         }
 
         .scrollspy {
@@ -117,10 +163,33 @@
 <body>
     <div class="side_slider">
         <ul class="nav nav-pills nav-fill">
-            <li class="nav-item link_dot"><a href="#section1" class="nav-link"></a></li>
-            <li class="nav-item link_dot"><a href="#section2" class="nav-link"></a></li>
-            <li class="nav-item link_dot"><a href="#section3" class="nav-link"></a></li>
-            <li class="nav-item link_dot"><a href="#section4" class="nav-link"></a></li>
+            <li class="nav-item link_dot"><a href="#section1" class="nav-link"></a>
+            <span class="link_dotTag">JULIANNE FEIR</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section2" class="nav-link"></a>
+                <span class="link_dotTag">ABOUT ME</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section3" class="nav-link"></a>
+                <span class="link_dotTag">CURRICULUM</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section4" class="nav-link"></a>
+                <span class="link_dotTag">PHLIOSOPHY</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section5" class="nav-link"></a>
+                <span class="link_dotTag">RESOURCES</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section6" class="nav-link"></a>
+                <span class="link_dotTag">ADVOCATY</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section7" class="nav-link"></a>
+                <span class="link_dotTag">STUDENT GALLERY</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section8" class="nav-link"></a>
+                <span class="link_dotTag">PROFESSIONAL GALLERY</span>
+            </li>
+            <li class="nav-item link_dot"><a href="#section9" class="nav-link"></a>
+                <span class="link_dotTag">CONTACT</span>
+            </li>
         </ul>
     </div>
     <div class="container-fluid gx-0">
@@ -166,7 +235,7 @@
                     "></div>
                 </div>
             </div>
-            <div id="section3" class="col-12 d-flex flex-row ">
+            <div  class="col-12 d-flex flex-row ">
                 <div class="col-6" style="
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -175,8 +244,8 @@
                 background-size: 50%;
                 background-position: 0 50%;
                  ">
-                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-                        <h1 style="color: #fff; font-weight: bolder; font-size: 3.5rem; margin-bottom: 15px;">Curriculum
+                    <div id="section3" class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <h1  style="color: #fff; font-weight: bolder; font-size: 3.5rem; margin-bottom: 15px;">Curriculum
                         </h1>
                         <p style="color: #fff; font-size: 1.1rem; font-weight: 300;">The conceptual framework for a
                             strong
@@ -344,7 +413,7 @@
                             background-image: url(./IMG/d50208c3-3e39-4fe3-9688-c94a90ab693e_g5s1h4.webp);
                         " class="">
                             <div style="text-align: center;">
-                                <h1 style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
+                                <h1 id="section5" style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
                                     Resources</h1>
                                 <strong style="color: #FFF;">A Collection of useful links.</strong>
                             </div>
@@ -366,7 +435,7 @@
                             background-image: url(./IMG/121.jpg);
                         " class="">
                             <div style="text-align: center;">
-                                <h1 style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
+                                <h1 id="section6" style="color: #FFF; font-weight: 900; font-size: 4rem; margin-bottom: 16px;">
                                     Advocacy</h1>
                                 <strong style="color: #FFF;">Worth Fighting For.</strong>
                             </div>
@@ -437,7 +506,7 @@
                             background-image: url(./IMG/IMG_3416_flzc2k.webp);
                         " class="">
                             <div style="text-align: center;">
-                                <h1 style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
+                                <h1 id="section7" style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
                                     Student Gallery</h1>
                                 <strong style="color: #FFF;">Excellent examples of student work.</strong>
                             </div>
@@ -460,8 +529,8 @@
                             background-image: url(./IMG/IMG_1177_sja3lp.webp);
                         " class="">
                             <div style="text-align: center;">
-                                <h1 style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
-                                    Student Gallery</h1>
+                                <h1 id="section8" style="color: #FFF; font-weight: 900; font-size: 3.3rem; margin-bottom: 16px;">
+                                    Professional Gallery</h1>
                                 <strong style="color: #FFF;">Excellent examples of student work.</strong>
                             </div>
                         </div>
